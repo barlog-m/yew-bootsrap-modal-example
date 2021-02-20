@@ -1,23 +1,23 @@
 # Rust Yew + Bootstrap Modal example
 
-[`wasm-bindgen`](https://rustwasm.github.io/docs/wasm-bindgen/introduction.html).
+[`wasm-bindgen`](https://rustwasm.github.io/docs/wasm-bindgen/introduction.html)
 
-[`Yew`](https://yew.rs).
+[`Yew`](https://yew.rs)
 
 [`Understanding Yew Part 1`](https://dev.to/rusty_sys_dev/understanding-yew-part-1-3cfn)
 
 ### To build and run this project you need this tools
 
-- [`wasm-pack`](https://github.com/rustwasm/wasm-pack).
-- [`rollup.js`](https://www.rollupjs.org/guide/en/).
-- [`cargo-make`](https://github.com/sagiegurari/cargo-make).
-- [`simple-http-server`](https://github.com/TheWaWaR/simple-http-server)
+-   [`wasm-pack`](https://github.com/rustwasm/wasm-pack)
+-   [`rollup.js`](https://www.rollupjs.org/guide/en/)
+-   [`cargo-make`](https://github.com/sagiegurari/cargo-make)
+-   [`simple-http-server`](https://github.com/TheWaWaR/simple-http-server)
 
 ### Order of commands
 
-- `cargo make build`
-- `cargo make bundle`
-- `cargo make serve`
+-   `cargo make build`
+-   `cargo make bundle`
+-   `cargo make serve`
 
 Also you have to install JS libraries with `npm install`
 
