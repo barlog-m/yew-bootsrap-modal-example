@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "name": "empty",
+    "version": "0.0.1",
+    "scripts": {},
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^11.2.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.7.0",
+        "bootstrap": "^5.0.0-beta2"
+    }
+}

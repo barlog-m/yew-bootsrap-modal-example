@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# IDEA
+.idea/
+out/
+classes/
+*.iml
+
+# Cargo
+Cargo.lock
+target/
+rusty-tags.vi
+
+# Wasm
+pkg/
+
+# npm
+node_modules/
+package-lock.json

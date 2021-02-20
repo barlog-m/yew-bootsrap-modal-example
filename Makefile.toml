@@ -1,0 +1,25 @@
+[tasks.test]
+command = "wasm-pack"
+args = ["test", "--chrome", "--headless"]
+
+[tasks.build]
+command = "wasm-pack"
+args = ["build", "--dev", "--target", "web", "--out-name", "app"]
+
+[tasks.bundle]
+command = "rollup"
+args = ["-c"]
+
+[tasks.serve]
+command = "simple-http-server"
+args = ["--index", "./", "--ip", "127.0.0.1", "--port", "8080", "--nocache", "--try-file", "./index.html"]
+
+[tasks.cargo-clean]
+command = "cargo"
+args = ["clean"]
+
+[tasks.clean]
+dependencies = ["cargo-clean"]
+command = "rm"
+args = ["-rf", "pkg"]
+
