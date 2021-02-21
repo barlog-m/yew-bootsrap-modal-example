@@ -41,6 +41,10 @@ Also you have to install JS libraries with `npm install`
 
 `wasm-pack test --chrome --headless` or `cargo make test`
 
+### clean
+
+`cargo make clean`
+
 ### deploy
 
 Access your generated build artifacts, `bundle.js` and `app_bg.wasm`, in ./pkg from your project's root directory.

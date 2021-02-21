@@ -18,8 +18,12 @@ args = ["--index", "./", "--ip", "127.0.0.1", "--port", "8080", "--nocache", "--
 command = "cargo"
 args = ["clean"]
 
+[tasks.node-clean]
+command = "rm"
+args = ["-rf", "node_modules"]
+
 [tasks.clean]
-dependencies = ["cargo-clean"]
+dependencies = ["cargo-clean", "node-clean"]
 command = "rm"
 args = ["-rf", "pkg"]
 
