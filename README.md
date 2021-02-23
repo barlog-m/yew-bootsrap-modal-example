@@ -9,14 +9,12 @@
 ### To build and run this project you need this tools
 
 -   [`wasm-pack`](https://github.com/rustwasm/wasm-pack)
--   [`rollup.js`](https://www.rollupjs.org/guide/en/)
 -   [`cargo-make`](https://github.com/sagiegurari/cargo-make)
--   [`simple-http-server`](https://github.com/TheWaWaR/simple-http-server)
+-   [`node`](https://nodejs.org/en/)
 
 ### Order of commands
 
 -   `cargo make build`
--   `cargo make bundle`
 -   `cargo make serve`
 
 Also you have to install JS libraries with `npm install`
@@ -29,13 +27,9 @@ Also you have to install JS libraries with `npm install`
 
 `wasm-pack build --debug --target web`
 
-### bundle
-
-`rollup ./main.js --format iife --file ./pkg/main.js` or `rolup -c` or `cargo make bundle`
-
 ### local run
 
-`simple-http-server --index ./ --ip 127.0.0.1 --port 8080 --nocache --try-file ./index.html` or `cargo make serve`
+`npm run start` or `cargo make serve`
 
 ### test
 
@@ -45,6 +39,6 @@ Also you have to install JS libraries with `npm install`
 
 `cargo make clean`
 
-### deploy
+### bundle for deploy
 
-Access your generated build artifacts, `bundle.js` and `app_bg.wasm`, in ./pkg from your project's root directory.
+`npm run build` or `cargo make bundle`

@@ -7,12 +7,12 @@ command = "wasm-pack"
 args = ["build", "--dev", "--target", "web", "--out-name", "app"]
 
 [tasks.bundle]
-command = "rollup"
-args = ["-c"]
+command = "npm"
+args = ["run", "build"]
 
 [tasks.serve]
-command = "simple-http-server"
-args = ["--index", "./", "--ip", "127.0.0.1", "--port", "8080", "--nocache", "--try-file", "./index.html"]
+command = "npm"
+args = ["run", "start"]
 
 [tasks.cargo-clean]
 command = "cargo"
@@ -22,8 +22,11 @@ args = ["clean"]
 command = "rm"
 args = ["-rf", "node_modules"]
 
+[tasks.dist-clean]
+command = "rm"
+args = ["-rf", "dist"]
+
 [tasks.clean]
-dependencies = ["cargo-clean", "node-clean"]
+dependencies = ["cargo-clean", "node-clean", "dist-clean"]
 command = "rm"
 args = ["-rf", "pkg"]
-

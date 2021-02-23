@@ -1,4 +1,4 @@
-import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 
 import init, { run } from "./pkg/app.js";
 
